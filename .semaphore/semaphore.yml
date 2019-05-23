@@ -11,7 +11,7 @@ blocks:
       - name: Compile Kernel
         commands:
           - checkout
-          - install-package bc build-essential zip curl libstdc++6
+          - install-package ccache bc bash git-core gnupg build-essential zip curl make automake autogen autoconf autotools-dev libtool shtool python m4 gcc libtool zlib1g-dev
           - wget https://raw.githubusercontent.com/Kry9toN/Scripts/master/semaphoremiui
           - bash semaphoremiui
 
