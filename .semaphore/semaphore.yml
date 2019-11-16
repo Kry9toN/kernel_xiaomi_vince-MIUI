@@ -3,7 +3,9 @@ name: HackKernel
 agent:
   machine:
     type: e1-standard-2
-    os_image: ubuntu1804
+  containers:
+  - name: Masak
+    image: najahi/oven:latest
 blocks:
   - name: "Build"
     task:
@@ -11,7 +13,6 @@ blocks:
       - name: Compile Kernel
         commands:
           - checkout
-          - install-package ccache bc bash git-core gnupg build-essential zip curl make automake autogen autoconf autotools-dev libtool shtool python m4 gcc libtool zlib1g-dev
           - wget https://raw.githubusercontent.com/Kry9toN/Scripts/master/semaphoremiui
           - bash semaphoremiui
 
