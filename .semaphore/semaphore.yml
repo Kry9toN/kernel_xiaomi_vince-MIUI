@@ -13,6 +13,6 @@ blocks:
       - name: Compile Kernel
         commands:
           - checkout
-          - wget https://raw.githubusercontent.com/Kry9toN/Scripts/master/semaphoremiui
+          - wget https://raw.githubusercontent.com/Kry9toN/Scripts/master/vince/semaphoremiui
           - bash semaphoremiui
 
